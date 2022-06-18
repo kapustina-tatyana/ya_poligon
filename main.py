@@ -41,12 +41,13 @@ class YaUploader:
             for line in file:
                 self.upload(line.rstrip())
 
-yadisk = YaUploader(ya_token)
+
 
 if __name__ == '__main__':
     # Получить путь к загружаемому файлу и токен от пользователя
     path_to_file = input('Введите абсолютный путь к загружаемому файлу \n или списку загружаемых файлов: ')
     token = input('Введите токен: ')
+    yadisk = YaUploader(token)
     uploader = YaUploader(token)
     extension = os.path.splitext(path_to_file)[1]
     if extension == '.txt':
