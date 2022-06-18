@@ -1,7 +1,6 @@
 import os
 import requests
 
-ya_token = os.getenv('ya_token')
 
 class YaUploader:
 
